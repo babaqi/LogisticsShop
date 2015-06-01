@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您已经添加的常用地址" />
+
+    <ListView
+        android:id="@+id/CommonAddListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5" >
+    </ListView>
+
+    <Button
+        android:id="@+id/AddAddresds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点此添加常用地址" />
+
+    <EditText
+        android:id="@+id/EditAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/OKButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="确认添加" 
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gld.widget.refresh.XListView
+        android:id="@+id/ShowListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:divider="#00000000"
+        android:dividerHeight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rili_relay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- android:visibility="gone" -->
+
+        <TextView
+            android:id="@+id/ChooseDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:text="选择日期"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/HistoryShowListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Relativa"
+            android:layout_marginTop="15dp"
+            android:divider="#00000000"
+            android:dividerHeight="10dp"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/Relativa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ChooseDate"
+            android:layout_marginTop="8dp"
+            android:background="#EEEEEE"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="历史订单数："
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/DemuNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingRight="55dp"
+                android:text="当前没有订单"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

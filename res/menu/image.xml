@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/TitleUserName"
+        android:showAsAction="always"
+        android:visible="true"/>
+    <item
+        android:id="@+id/TitleExit"
+        android:showAsAction="never"
+        android:title="退出程序"
+        android:visible="true"/>
+    <item
+        android:id="@+id/TitleChangeUser"
+        android:showAsAction="never"
+        android:title="切换账号"
+        android:visible="true"/>
+    <!--
+         <item
+        android:id="@+id/CommonAddress"
+        android:showAsAction="never"
+        android:title="常用地址"
+        android:visible="true"/>
+    -->
+
+</menu>
